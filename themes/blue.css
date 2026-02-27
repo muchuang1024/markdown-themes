@@ -117,11 +117,30 @@
     border: 1px solid #e1e4e8 !important;
 }
 
-#wenyan pre[class*="hljs"],
+#wenyan pre,
 #wenyan pre[class*="language-"],
-#wenyan .hljs,
+#wenyan pre[class*="hljs"] {
+    animation: forceGrayBackground 0.001s forwards !important;
+}
+
+@keyframes forceGrayBackground {
+    to {
+        background: #f6f8fa !important;
+        background-color: #f6f8fa !important;
+    }
+}
+
+/* 同样覆盖代码内容区域 */
+#wenyan pre code,
 #wenyan pre .hljs {
-    background: transparent !important;
+    animation: forceTransparent 0.001s forwards !important;
+}
+
+@keyframes forceTransparent {
+    to {
+        background: transparent !important;
+        background-color: transparent !important;
+    }
 }
 
 #wenyan pre code {
