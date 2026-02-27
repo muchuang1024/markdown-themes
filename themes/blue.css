@@ -117,6 +117,13 @@
     border: 1px solid #e1e4e8 !important;
 }
 
+#wenyan pre[class*="hljs"],
+#wenyan pre[class*="language-"],
+#wenyan .hljs,
+#wenyan pre .hljs {
+    background: transparent !important;
+}
+
 #wenyan pre code {
     background: transparent !important;
     background-color: transparent !important;
